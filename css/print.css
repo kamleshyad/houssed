@@ -1,0 +1,307 @@
+/*** GLOBAL SETTING ***/
+body {margin:0; padding:0;font:normal 18px 'Mulish', sans-serif; color:#000; line-height:normal;}
+
+/*** GLOBAL SELECTORS ***/
+a{ color:#5a1613; transition: .3s ease;}
+a:hover{ color:#000000;} 
+/*Main Content*/
+
+:root{
+    --black: #000;
+    --blue: #006aff;
+    --white: #fff;
+    --border: #c5d6ec;
+    --bg: #e5f0ff;
+    --footertext: #555555;
+}
+
+.container{max-width: min(1290px, 96%); margin: 0 auto;}
+img{max-width: 100%; height: auto;}
+
+
+
+/* mulish-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/mulish-v12-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/mulish-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/mulish-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/mulish-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/mulish-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/mulish-v12-latin-regular.svg#Mulish') format('svg'); /* Legacy iOS */
+}
+/* mulish-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/mulish-v12-latin-500.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/mulish-v12-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/mulish-v12-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/mulish-v12-latin-500.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/mulish-v12-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/mulish-v12-latin-500.svg#Mulish') format('svg'); /* Legacy iOS */
+}
+/* mulish-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/mulish-v12-latin-600.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/mulish-v12-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/mulish-v12-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/mulish-v12-latin-600.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/mulish-v12-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/mulish-v12-latin-600.svg#Mulish') format('svg'); /* Legacy iOS */
+}
+/* mulish-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/mulish-v12-latin-700.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/mulish-v12-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/mulish-v12-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/mulish-v12-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/mulish-v12-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/mulish-v12-latin-700.svg#Mulish') format('svg'); /* Legacy iOS */
+}
+/* mulish-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/mulish-v12-latin-800.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/mulish-v12-latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/mulish-v12-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/mulish-v12-latin-800.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/mulish-v12-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/mulish-v12-latin-800.svg#Mulish') format('svg'); /* Legacy iOS */
+}
+
+.owl-carousel, .owl-carousel .owl-item { -webkit-tap-highlight-color:transparent; position:relative } 
+.owl-carousel { display:none; width:100%; z-index:1;}
+.owl-carousel .owl-stage { position:relative; -ms-touch-action:pan-Y; touch-action:manipulation; -moz-backface-visibility:hidden }
+.owl-carousel .owl-stage:after { content:"."; display:block; clear:both; visibility:hidden; line-height:0; height:0 }
+.owl-carousel .owl-stage-outer { position:relative; overflow:hidden; -webkit-transform:translate3d(0, 0, 0)}
+.owl-carousel .owl-item, .owl-carousel .owl-wrapper { -webkit-backface-visibility:hidden; -moz-backface-visibility:hidden; -ms-backface-visibility:hidden; -webkit-transform:translate3d(0, 0, 0); -moz-transform:translate3d(0, 0, 0); -ms-transform:translate3d(0, 0, 0)}
+.owl-carousel .owl-item {  float:left; -webkit-backface-visibility:hidden; -webkit-touch-callout:none}
+.owl-carousel .owl-item img { display:block; width:auto; max-width:100%; }
+.owl-carousel .owl-dots.disabled {display:none}
+.no-js .owl-carousel, .owl-carousel.owl-loaded {display:block}
+.owl-carousel .owl-dot, .owl-carousel .owl-nav .owl-next, .owl-carousel .owl-nav .owl-prev { cursor:pointer; -webkit-user-select:none; -khtml-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none}
+.owl-carousel.owl-loading { opacity:0; display:block;}
+.owl-carousel.owl-hidden {opacity:0;}
+.owl-carousel.owl-refresh .owl-item {visibility:hidden;}
+.owl-carousel.owl-drag .owl-item {-ms-touch-action:pan-y; touch-action:pan-y; -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none }
+.owl-carousel.owl-grab { cursor:move; cursor:grab }
+.owl-carousel.owl-rtl {direction:rtl}
+.owl-carousel.owl-rtl .owl-item {float:right}
+.owl-carousel .animated {animation-duration:1s;animation-fill-mode:both}
+.owl-carousel .owl-animated-in {z-index:0}
+.owl-carousel .owl-animated-out {z-index:1}
+.owl-carousel .fadeOut {animation-name:fadeOut}
+
+/* / Feel free to change duration  /  */
+.animated  { -webkit-animation-duration : 1000 ms  ; animation-duration : 1000 ms  ; -webkit-animation-fill-mode : both  ; animation-fill-mode : both  ;}  
+/* / .owl-animated-out - only for current item /  */
+/* / This is very important class. Use z-index if you want move Out item above In item /  */
+.owl-animated-out {  z-index : 1    }
+/* .owl-animated-in - only for upcoming item
+/ This is very important class. Use z-index if you want move In item above Out item / 
+.owl-animated-in {  z-index : 0    }
+/ .fadeOut is style taken from Animation.css and this is how it looks in owl.carousel.css:  / 
+.fadeOut  {  -webkit-animation-name : fadeOut  ;  animation-name : fadeOut  ;}  
+@-webkit-keyframes  fadeOut  {
+  0% {
+    opacity : 1   ;
+  }  
+  100% {
+    opacity : 0   ;
+  }  
+}
+@keyframes  fadeOut  {
+  0% {
+    opacity : 1   ;
+  }  
+  100% {
+    opacity : 0   ;
+  }  
+}
+
+@keyframes smoothScroll {
+	0% {
+		transform: translateY(-100px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+@keyframes ticker {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+
+    }
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+                transform: translate3d(-100%, 0, 0);
+    }
+}
+*/
+
+.headertopsec{padding: 20px 0; border-bottom: 1px solid #e4ebf3;}
+.headertopsec .container{display: flex; align-items: center; justify-content: space-between;}
+.headerbtn ul{display: flex; gap: 0 22px;}
+.headerbtn ul li{position: relative;}
+.headerbtn ul li + li {border-left: 1px solid #7f7f7f; padding-left: 20px;}
+
+.headerbtn ul li a{display: inline-block; font-size: 16px; color: var(--black); font-weight: 500; line-height: normal; padding-left: 28px; transition: all 0.3s linear; background-position: 0 0;}
+.headerbtn ul li a:hover{color: var(--blue);}
+.headerbtn ul li a.usericon::before{content: ''; position: absolute; top: calc(50% - 6px); left: 5px; background: url(../images/user-icon.png) no-repeat; background-size: cover; width: 12px; height: 14px; }
+.headerbtn ul li a.usericon:hover::before{background-position: 0 -14px;}
+.headerbtn ul li a.offericon::before{content: ''; position: absolute; top: calc(50% - 9px); left: 20px; background: url(../images/offer-icon.png) no-repeat; background-size: cover; width: 18px; height: 18px; }
+.headerbtn ul li a.offericon:hover::before{background-position: 0 -18px;}
+
+.headersec{padding: 14px 0;}
+.headersec ul{display: flex; align-items: center; gap: 0 35px;}
+.headersec ul li a{display: inline-block; font-size: 16px; color: var(--black); font-weight: 600; line-height: normal;}
+
+.bannersec{padding: 40px 0; background: var(--bg);}
+.bannersec .bannertop{display: grid; grid-template-columns: 300px 630px 300px; gap: 0 30px; padding-bottom: 40px;}
+.bannersec .imgbox a{display: block;}
+.bannersec .bannerleftsec ul{display: grid; grid-template-columns: 1fr; gap: 25px 0;}
+.bannersec .imgwrapbox .imgbox{position: relative;}
+.catsec a{display: inline-block; font-size: 12px; color: var(--blue); font-weight: 600; line-height: normal; padding: 8px 14px; background: var(--white); position: absolute; bottom: 10px; left: 10px; text-transform: capitalize;}
+.catsec a:hover{color: var(--white); background: var(--blue);}
+.bannersec .imgwrapbox h3 a{display: inline-block; font-size: 20px; color: var(--black); font-weight: 700; line-height: 28px; margin-top: 20px;}
+.bannersec .imgwrapbox h3 a:hover{color: var(--blue);}
+
+.bannersec .bannermiddlesec .imgwrapbox h3 a{font-size: 26px; line-height: 38px;}
+.bannersec .bannermiddlesec p{font-size: 18px; color: var(--black); font-weight: 400; line-height: 28px; margin-top: 22px;}
+
+.bannersec .bannerrightsec ul{font-size: 0; display: grid; gap: 17px 0;}
+.bannersec .bannerrightsec ul li{padding-top: 17px; border-top: 1px solid var(--border);}
+.bannersec .bannerrightsec ul li:first-child{border-top: 0; padding-top: 0;}
+.bannersec .bannerrightsec .content{width: calc(300px - 127px); display: inline-block; vertical-align: top;}
+.bannerrightsec .content a.catsec{display: inline-block; font-size: 12px; color: var(--blue); font-weight: 600; line-height: normal; margin-bottom: 5px;}
+.bannerrightsec .content a.catsec:hover{color: var(--black);}
+.bannerrightsec .content h4 a{display: inline-block; font-size: 16px; color: var(--black); font-weight: 700; line-height: 22px;}
+.bannerrightsec .content h4 a:hover{color: var(--blue);}
+.bannersec .bannerrightsec .imgbox{margin-left: 17px; width: 110px; display: inline-block; vertical-align: top;}
+
+span.bordersec{display: block; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 2px 0;}
+
+.bannerCarousel{padding: 35px 0 0;}
+.bannerCarousel .item h4{text-align: center;}
+.bannerCarousel .item h4 a{display: inline-block; text-align: center; font-size: 20px; color: var(--black); font-weight: 700; line-height: 28px; padding: 15px 10px;} 
+.bannerCarousel .item h4 a:hover{color: var(--blue);}
+.bannerCarousel .owl-prev, .bannerCarousel .owl-next,.whatnewSlider .owl-prev, .whatnewSlider .owl-next { position: absolute; top: calc(50% - 35px); width: 50px; height: 50px; border-radius: 50%; background: #fff; box-shadow: 0 0 5px rgba(0,0,0,.20); border: 0; font-size: 0; }
+.bannerCarousel .owl-prev , .whatnewSlider .owl-prev{ left: -29px; }
+.bannerCarousel .owl-next , .whatnewSlider .owl-next{ right: -29px; }
+.bannerCarousel .owl-prev span, .bannerCarousel .owl-next span ,.whatnewSlider .owl-prev span, .whatnewSlider .owl-next span{ font-size: 0; background: url(../images/carousel_arrow_icon.png)0 0 no-repeat; width: 13px; height: 21px; display: block; margin: 0 auto; }
+.bannerCarousel .owl-next span, .whatnewSlider .owl-next span { background-position: -13px 0; }
+.bannerCarousel .owl-prev:hover span , .whatnewSlider .owl-prev:hover span{background-position: 0 -21px;}
+.bannerCarousel .owl-next:hover span , .whatnewSlider .owl-next:hover span{ background-position: -13px -21px; }
+
+.whatnewsec {padding: 50px 0 0;}
+.whatnewsec h3{font-size: 30px; color: var(--black); font-weight: 400; line-height: 38px;}
+.whatnewsec .selectbox{display: flex; align-items: center; gap: 0 10px; margin-bottom: 35px;}
+.selectbox select{border-bottom: 2px solid var(--blue); font-size: 30px; color: var(--black); font-weight: 700; line-height: 38px; border-top: 0; border-left: 0; border-right: 0; padding-right: 30px; }
+.selectwrap{position: relative;}
+.selectwrap::after{content: ''; position: absolute; top: calc(50% - 6px); right: 0; background: url(../images/arrow.png) no-repeat center; background-size: cover; width: 18px; height: 12px;}
+.selectbox select:focus{outline: none;}
+.selectbox select {-moz-appearance: none; -webkit-appearance: none;}
+.selectbox select option{font-size: 20px; font-weight: 500; line-height: normal; padding: 10px;}
+
+.whatnewsec .whatnewSlider .item{border-radius: 10px; overflow: hidden; position: relative;}
+.whatnewsec .whatnewSlider .item::before{content:''; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(0,27,65,1) 0%, rgba(255,255,255,0) 100%); z-index: 1;} 
+.whatnewsec .whatnewSlider .contentbox{position: absolute; right: 25px; left: 25px; bottom: 25px; z-index: 1;}
+.whatnewsec .contentbox a.cat{display: inline-block; font-size: 12px; color: var(--blue); font-weight: 600; line-height: normal; padding: 8px 14px; background: var(--white); text-transform: capitalize; margin-bottom: 15px;}
+.whatnewsec .contentbox a.cat:hover{color: var(--white); background: var(--blue);}
+.whatnewsec .contentbox h4 a{display: inline; font-size: 18px; color: var(--white); line-height: 26px; font-weight: 700; background-image: linear-gradient(to right, currentColor 0%, currentColor 100%); background-position: 0 100%; background-repeat: no-repeat; box-sizing: border-box; transition: background-size 0.8s cubic-bezier(0.25, 0.8, 0.25, 1); background-size: 0% 2px;}
+.whatnewsec .contentbox h4 a:hover{background-size: 100% 2px;}
+
+.viewbtn{margin: 40px auto 0; display: flex; justify-content: center;}
+.viewbtn a{display: inline-block; font-size: 20px; color: var(--blue); font-weight: 600; line-height: 36px; border: 1px solid var(--blue); border-radius: 50px; padding: 9px 46px;}
+.viewbtn a:hover{background: var(--blue); color: var(--white);}
+
+.lifestylesec{padding: 45px 0;}
+h3.title{font-size: 30px; color: var(--black); font-weight: 800; line-height: 38px; margin: 40px 0 15px;} 
+h3.title span{font-weight: 400;}
+p.subtitle{font-size: 18px; color: var(--black); line-height: normal; font-weight: 400;}
+
+.tabsec{padding: 25px 0 10px;}
+.tabsec ul.tab{display: flex; flex-wrap: wrap; gap: 0 10px; padding-bottom: 25px;}
+.tabsec ul.tab li.tab-link{padding: 7px 13px; font-size: 18px; color: var(--black); font-weight: 500; line-height: normal; background: var(--bg); cursor: pointer; border-radius: 5px;}
+.tabsec ul.tab li.tab-link:hover, .tabsec ul.tab li.tab-link.active {background: var(--blue); color: var(--white);}
+
+.tabsec .tab-content {display: none;}
+.tabsec .tab-content.active {display: block;}
+
+.tabsec .tabcontentwrap .lifestyleContent{display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 30px}
+.tabsec .lifetstylecontent_wrap ul{display: grid; grid-template-columns: repeat(2,1fr); gap: 35px 30px;}
+.tabsec .lifetstylecontent_wrap .imgbox {position: relative;}
+.tabsec .lifetstylecontent_wrap .imgbox a{display: block;}
+.tabsec .lifetstylecontent_wrap .catsec a{display: inline-block; font-size: 12px; color: var(--blue); font-weight: 600; line-height: normal; padding: 8px 14px; background: var(--white); position: absolute; bottom: 10px; left: 10px; text-transform: capitalize;}
+.tabsec .lifetstylecontent_wrap .catsec a:hover{color: var(--white); background: var(--blue);}
+.tabsec .lifetstylecontent_wrap .content h4 a{display: inline-block; font-size: 24px; color: var(--black); font-weight: 700; line-height: 36px; padding: 20px 0;}
+.tabsec .lifetstylecontent_wrap .content h4 a:hover{color: var(--blue);}
+.tabsec .lifetstylecontent_wrap .content p{line-height: 28px; font-size: 18px; color: var(--black); font-weight: 400;}
+a.readbtn{display: inline-block; font-size: 16px; color: var(--blue); font-weight: 600; line-height: normal; border-bottom: 2px solid #b0c6ff; margin-top: 15px;}
+a.readbtn:hover{color: var(--black); border-color: var(--black);}
+.tabsec .lifetstylecontent_wrap ul li .content h4 a{font-size: 20px; line-height: 28px; padding: 20px 0 0;}
+
+.financesec{padding-bottom: 45px;}
+.financesec .financetab{display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 30px;}
+.financesec .financetab .imgbox{position: relative;}
+.financesec .financetab .imgbox a{display: block;}
+.financesec .financetab .catsec a{display: inline-block; font-size: 12px; color: var(--blue); font-weight: 600; line-height: normal; padding: 8px 14px; background: var(--white); position: absolute; bottom: 10px; left: 10px; text-transform: capitalize;}
+.financesec .financetab .catsec a:hover{color: var(--white); background: var(--blue);}
+.financesec .financetab .content h4 a{display: inline-block; font-size: 24px; color: var(--black); font-weight: 700; line-height: 32px; padding: 15px 0 10px;}
+.financesec .financetab .content p{font-size: 18px; color: var(--black); font-weight: 400; line-height: 28px;}
+.financesec .financetab .financetabwrap ul li{display: grid; grid-template-columns: 190px 205px; gap: 40px 15px;}
+.financesec .financetab .financetabwrap ul li:first-child{margin-top: 0;}
+.financesec .financetab .financetabwrap ul li{margin-top: 40px;}
+.financesec .financetab .financetabwrap ul li .imgbox{position: relative;}
+.financesec .financetab .financetabwrap ul li .imgbox a{display: block;}
+.financesec .financetabwrap ul li .content h4 a{display: inline-block; font-size: 18px; color: var(--black); font-weight: 700; line-height: 24px; padding: 0;}
+.financesec .financetabwrap ul li .catsec a{display: inline-block; font-size: 12px; color: var(--white); font-weight: 600; line-height: normal; padding: 5px 10px; background: var(--blue); position: absolute; bottom: 10px; left: 10px; text-transform: capitalize;}
+.financesec .financetabwrap ul li .catsec a:hover{color: var(--blue); background: var(--white);}
+ 
+.policysec,.guidesec, .homesec{padding-bottom: 45px;}
+
+.repeattabbox ul{display: grid; grid-template-columns: repeat(4,1fr); gap: 0 30px}
+.repeattabbox .imgbox{position: relative;}
+.repeattabbox .imgbox a{display: block;}
+.repeattabbox .catsec a{display: inline-block; font-size: 12px; color: var(--blue); font-weight: 600; line-height: normal; padding: 8px 14px; background: var(--white); position: absolute; bottom: 10px; left: 10px; text-transform: capitalize;}
+.repeattabbox .catsec a:hover{color: var(--white); background: var(--blue);}
+.repeattabbox .content h4 a{display: inline-block; font-size: 20px; color: var(--black); font-weight: 700; line-height: 28px; padding: 20px 0 0;}
+.repeattabbox .content h4 a:hover{color: var(--blue);}
+
+.footersec{background: var(--bg); padding: 40px 0 65px;}
+.footersec .footerwrap{display: grid; grid-template-columns: repeat(4,1fr); gap: 0 30px;}
+.footersec h4{font-size: 22px; color: var(--black); font-weight: 700; line-height: 30px; margin-bottom: 22px;}
+.footersec .footerwrap ul{display: grid; grid-template-columns: 1fr; gap: 15px 0;}
+.footersec .footerwrap ul a{display: inline-block; font-size: 16px; color: var(--footertext); font-weight: 400; line-height: normal;}
+
+.footermenusec{padding: 20px 0;}
+.footermenusec .container{display: flex; justify-content: space-between; gap: 0 30px; align-items: center;}
+.footermenusec .footernav ul{display: flex; flex-wrap: wrap; gap: 0 20px; }
+.footermenusec .footernav ul li:first-child{padding-left: 0; border-left: 0;}
+.footermenusec .footernav ul li{padding-left: 20px; border-left: 1px solid #747474; line-height: 16px;}
+.footermenusec .footernav ul a{display: inline-block; font-size: 16px; color: #747474; font-weight: 400; line-height: 16px;}
+.footermenusec .footernav ul a:hover{color: var(--blue);}
+
+.copyrightsec{padding: 20px 0; border-top: 2px solid #e0f1ff; text-align: center;}
+.copyrightsec p{font-size: 16px; color: #3a3a3a; font-weight: 400; line-height: normal;}
+
+
