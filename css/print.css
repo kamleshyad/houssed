@@ -173,7 +173,8 @@ img{max-width: 100%; height: auto;}
 
 .headersec{padding: 14px 0;}
 .headersec ul{display: flex; align-items: center; gap: 0 35px;}
-.headersec ul li a{display: inline-block; font-size: 16px; color: var(--black); font-weight: 600; line-height: normal;}
+.headersec ul li a{display: inline-block; font-size: 16px; color: var(--black); font-weight: 600; line-height: normal; transition: all 0.3s linear;}
+.headersec ul li a:hover{color: var(--blue);}
 
 .bannersec{padding: 40px 0; background: var(--bg);}
 .bannersec .bannertop{display: grid; grid-template-columns: 300px 630px 300px; gap: 0 30px; padding-bottom: 40px;}
@@ -292,6 +293,7 @@ a.readbtn:hover{color: var(--black); border-color: var(--black);}
 .footersec h4{font-size: 22px; color: var(--black); font-weight: 700; line-height: 30px; margin-bottom: 22px;}
 .footersec .footerwrap ul{display: grid; grid-template-columns: 1fr; gap: 15px 0;}
 .footersec .footerwrap ul a{display: inline-block; font-size: 16px; color: var(--footertext); font-weight: 400; line-height: normal;}
+.footersec .footerwrap ul a:hover{color: var(--blue);}
 
 .footermenusec{padding: 20px 0;}
 .footermenusec .container{display: flex; justify-content: space-between; gap: 0 30px; align-items: center;}
@@ -303,5 +305,3 @@ a.readbtn:hover{color: var(--black); border-color: var(--black);}
 
 .copyrightsec{padding: 20px 0; border-top: 2px solid #e0f1ff; text-align: center;}
 .copyrightsec p{font-size: 16px; color: #3a3a3a; font-weight: 400; line-height: normal;}
-
-
